@@ -27,10 +27,6 @@ paginate_path: /page:num/
 # Tracker
 analytics: UA-83979019-1
 
-# Comments
-disqus: yes
-disqus-shortname: webjeda-demo
-
 #social
 github: https://github.com/SamHibb
 email: samhibb16@gmail.com
