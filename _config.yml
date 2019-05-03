@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Webjeda cards
-email: your-email@domain.com
+title: Sam Hibb Dev Blog
+email: samhibb16@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Webjeda Cards is a Bootstrap based jekyll theme for portfolio, photography or any kind of blog.
+  My development blog where I post portfolio pieces and discuss them.
   
   
 baseurl: "/SamHibb.github.io" # the subpath of your site, e.g. /blog
@@ -40,17 +40,8 @@ disqus: yes
 disqus-shortname: webjeda-demo
 
 #social
-facebook: http://facebook.com/webjeda
-quora: http://quora.com/sharathdt
-twitter: http://twitter.com/@webjeda
-github: http://github.com/webjeda
-email: hello@webjeda.com
-
-#facebook like box
-fb-like-box: yes
-fb-app-id: 549480635219583
-fb-page-url: https://www.facebook.com/webjeda/
-fb-page-title: webjeda
+github: https://github.com/SamHibb
+email: samhibb16@gmail.com
 
 # Sass style
 sass:
