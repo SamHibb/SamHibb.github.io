@@ -1,15 +1,15 @@
 ---
 layout: post
-title: java game engine
+title: Java game engine
 date: 2017-10-01T15:21:00.000Z
-description: a new java game engine
+description: A new java game engine
 published: true
 category: development
 tags:
   - java
   - game engine
 ---
-## a new java game engine
+## A new java game engine
 <br>
 
 Recently I stared work on a new java game engine. This is something I’ve wanted to do for a while but never managed to get the spare time with work taking priority. But now I should be able to spare some hours to work on my new game engine as a fun side project from my University work.

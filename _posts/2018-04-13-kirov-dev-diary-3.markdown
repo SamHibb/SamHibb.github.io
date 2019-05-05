@@ -1,8 +1,8 @@
 ---
 layout: post
-title: kirov dev diary 3
+title: Kirov dev diary 3
 date: 2018-04-13T16:00:00.000Z
-description: thinking bigger
+description: Thinking bigger
 published: true
 category: development
 tags:

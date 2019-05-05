@@ -1,8 +1,8 @@
 ---
 layout: post
-title: kirov dev diary 1
+title: Kirov dev diary 1
 date: 2017-10-27T16:30:00.000Z
-description: a follow up to my java game engine
+description: A follow up to my java game engine
 published: true
 category: development
 tags:

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: kirov dev diary 2
+title: Kirov dev diary 2
 date: 2018-01-06T14:00:00.000Z
-description: new stuff!
+description: New stuff!
 published: true
 category: development
 tags:
