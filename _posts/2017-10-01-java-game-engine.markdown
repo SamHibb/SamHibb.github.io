@@ -4,6 +4,7 @@ title: Java game engine
 date: 2017-10-01T15:21:00.000Z
 description: A new java game engine
 published: true
+img: kirov-splash.png
 category: development
 tags:
   - java

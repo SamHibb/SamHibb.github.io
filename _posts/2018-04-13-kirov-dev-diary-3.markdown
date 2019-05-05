@@ -3,6 +3,7 @@ layout: post
 title: Kirov dev diary 3
 date: 2018-04-13T16:00:00.000Z
 description: Thinking bigger
+img: kirov-collision1.gif
 published: true
 category: development
 tags:
@@ -19,6 +20,7 @@ After a lot of development and reworking of systems I finally got colliders to w
 Step 1 was getting a component system working. Entities now has a list of components like that found in Unity.
 Step 2 was implementing a transform component so that the box collider could share the same position and update that position at the same time as it’s attached entity.
 Step 3 was finally implementing the collision code. The way I chose to design it was to use a four point system where each edge of a square drawn a round a sprite would detected if something crosses it and compares with other edges to confirm if something has collided.
+
 ``` java
 //Four point collision
 public boolean checkCollision(Vector2 position, Vector2 area){

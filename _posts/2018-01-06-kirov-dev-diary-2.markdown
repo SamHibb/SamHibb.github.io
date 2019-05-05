@@ -3,6 +3,7 @@ layout: post
 title: Kirov dev diary 2
 date: 2018-01-06T14:00:00.000Z
 description: New stuff!
+img: kirov-entity1.gif
 published: true
 category: development
 tags:
