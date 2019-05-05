@@ -4,14 +4,19 @@ title: About
 permalink: /about/
 ---
 
+Hi, my name's Sam and I’m a graduate with a degree in BSC(HONS) GAMES TECHNOLOGY from the University of the West of England. I’ve always had a passion for games and gaming and have always wanted to learn the design aspects of gaming. Plus, I have a keen interest in programming so I decided why not merge the two? 
 
 
 
-Webjeda cards is a Bootstrap based theme. Any Bootstrap element can be used in the theme. Read [Webjeda Blog](http://blog.webjeda.com){: target="_blank"} for jekyll tutorials. 
+I studied A-level computing in college which is where I learned coding. Ever since I've found myself creating games and software, solving problems using computer science and always trying to learn and improve my programming abilities.
 
-For more themes, visit [jekyll-themes](https://jekyll-themes.com){: target="_blank"}
 
-**Does the theme deserve a star?**
 
-<a class="github-button" href="https://github.com/sharu725/cards" data-style="mega" data-count-href="/sharu725/cards/stargazers" data-count-api="/repos/sharu725/cards#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/cards on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+During the summer of my second year at Uni, I obtained my first programming job at an independent software company which made API connectors in PHP. This sparked my passion for developing and designing system architecture which led me to design and create my own game engine. The Kirov engine has evolved over time to fit my academic needs. It's more of a tool for learning than an actual engine at this point however, I want to continue working on the tool.
+
+
+
+The best way to contact me is via email at: <samhibb16@mail.com>
+
+My CV can be found at: [Samuel Hibbert CV](\SamHibb.github.io\files\SamHibbCV.pdf)
+
