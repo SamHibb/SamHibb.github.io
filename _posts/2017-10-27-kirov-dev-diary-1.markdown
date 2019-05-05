@@ -19,11 +19,11 @@ But for now, I’ll go over what’s been done so far:
 
 #### UML
 
-![UML](kirov-UML.png)
+![UML](/SamHibb.github.io/images/kirov-UML.png)
 
 <br>
 
-<img src="kirov-UML.png " alt="kirov-UML" width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-UML.png" alt="kirov-UML" width="700" height="600">
 <br>
 
 This diagram is a super rough interpretation of what the UML diagram will look like. My style of coding tends to be that I put together a rough diagram of what the program will look like and then start coding a block, update the UML and go from there. This way I don’t have to make massive changes to the UML mid-way through the project making it obsolete as I tend to find that I may have over looked something important in the planning phase that I found out in the development phase.
