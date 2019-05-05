@@ -19,19 +19,20 @@ But for now, I’ll go over what’s been done so far:
 
 #### UML
 
-<img src="/SamHibb.github.io/images/kirov-UML.png" alt="kirov-UML" width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-UML.png" alt="kirov-UML" width="700" height="400">
 <br>
 
 This diagram is a super rough interpretation of what the UML diagram will look like. My style of coding tends to be that I put together a rough diagram of what the program will look like and then start coding a block, update the UML and go from there. This way I don’t have to make massive changes to the UML mid-way through the project making it obsolete as I tend to find that I may have over looked something important in the planning phase that I found out in the development phase.
 
 #### The map
 
-<img src="/SamHibb.github.io/images/kirov-mapImg.png " alt="kirov-map" width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-mapImg.png " alt="kirov-map" width="700" height="400">
 <br>
 
 This image is the map that is loaded into the game engine for rendering and below is the output that game engine gives. For the record, I’m not a good artist…
 
-<iframe width="700" height="315" src="https://www.youtube.com/embed/xAmswB1xDow?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/xAmswB1xDow?rel=0" frameborder="0" allowfullscreen></iframe>
+
 <br>
 
 But as you can see it serves its purpose and shows of the map being rendered and scaled correctly. This works by reading in the pixels from the map image and drawing sprites based on what it reads in. A code excerpt that shows some of this process is given below:

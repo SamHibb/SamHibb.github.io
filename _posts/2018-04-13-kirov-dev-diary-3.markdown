@@ -44,7 +44,7 @@ public boolean checkCollision(Vector2 position, Vector2 area){
 }
 ```
 Here’s a little demo of this in action:
-<img src="/SamHibb.github.io/images/kirov-collision1.gif" alt="kirov-collision-demo" width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-collision1.gif" alt="kirov-collision-demo" width="700" height="400">
 <br>
 
 #### Scene Manager
