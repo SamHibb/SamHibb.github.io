@@ -8,5 +8,5 @@ categories: two
 
 ## Introducing the new site
 
-I've moved the blog over to a new website theme, the old one was to simplistic and felt a bit empty so I've moved to this new theme.
+I've moved the blog over to a new website theme, the old one was too simplistic and felt a bit empty so I've moved to this new theme.
 
