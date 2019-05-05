@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about_page
 title: Portfolio
 permalink: /contact/
 ---
