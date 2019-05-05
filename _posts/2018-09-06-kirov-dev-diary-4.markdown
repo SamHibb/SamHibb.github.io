@@ -65,11 +65,11 @@ Kirov now has an audio system that uses java’s inbuilt ‘Clip’ functionalit
 
 #### Kirov Splash Screen
 There is now a splash screen when booting up a Kirov engine game.
-<img src="../../../../img/kirov-splash.png" alt="kirov-splash " width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-splash.png" alt="kirov-splash " width="700" height="600">
 <br>
 
 #### GUI System (Coming soon)
 Currently being developed is a new GUI system designed to be as simple and intuitive as possible. It will be made to be easily customizable and easy to implement. The plan is to make a variety of different GUI elements that can be added into a scene easily. Elements such as buttons, tooltips and drop-down menus all with pre-programmed logic.
-<img src="../../../../img/kirov-ui-1.png" alt="kirov-ui " width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-ui-1.png" alt="kirov-ui " width="700" height="600">
 <br>
 

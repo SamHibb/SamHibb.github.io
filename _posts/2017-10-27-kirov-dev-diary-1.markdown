@@ -19,10 +19,6 @@ But for now, I’ll go over what’s been done so far:
 
 #### UML
 
-![UML](/SamHibb.github.io/images/kirov-UML.png)
-
-<br>
-
 <img src="/SamHibb.github.io/images/kirov-UML.png" alt="kirov-UML" width="700" height="600">
 <br>
 
@@ -30,7 +26,7 @@ This diagram is a super rough interpretation of what the UML diagram will look l
 
 #### The map
 
-<img src="../../../../img/kirov-mapImg.png " alt="kirov-map" width="700" height="600">
+<img src="/SamHibb.github.io/images/kirov-mapImg.png " alt="kirov-map" width="700" height="600">
 <br>
 
 This image is the map that is loaded into the game engine for rendering and below is the output that game engine gives. For the record, I’m not a good artist…
