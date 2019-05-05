@@ -79,7 +79,7 @@ TILE_CODES {
 ```
 Using this the engine can tell what sprite needs to be loaded for example; a transition between Grass and a water tile above it would be: Water -> Grass Upper, which is WATER_GRASS_U, this is what Kirov knows the sprite as. Then the engine looks for the corresponding user’s name for the sprite (in this case it is the exact same name) and uses that to load the sprite.
 
-<img src="/SamHibb.github.io/images/kirov-map2.png" alt="kirov-map" width="700" height="6400">
+<img src="/SamHibb.github.io/images/kirov-map2.png" alt="kirov-map" width="700" height="400">
 <br>
 
 <img src="/SamHibb.github.io/images/kirov-map3.png" alt=" kirov-map " width="700" height="400">
