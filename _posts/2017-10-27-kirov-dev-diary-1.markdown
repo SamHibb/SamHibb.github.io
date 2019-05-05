@@ -9,7 +9,7 @@ tags:
   - java
   - game engine
 ---
-## introducing kirov
+## Introducing kirov
 <br>
 
 Kirov is the (placeholder) name of my Java game engine project that I’ve been working on. And this dev diary will document the progress I’ve been making on it so far. These diary posts will likely be sporadic with the all other University work that I’ll be doing as a focus but when I get time I’ll be documenting and developing this game engine. 
