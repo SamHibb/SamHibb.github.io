@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Technology showreel
+title: Advanced Tech showreel
 date: 2019-05-17T15:00:00.000Z
 description: A showreel of my work for the Advanced Technology module in Games Technology degree
 img: at-raytracer.png
@@ -13,7 +13,7 @@ tags:
   - Tensorflow
   - AI
 ---
-## Showreel
+## AT Showreel
 <br>
 
 This video is a showreel demonstrating the various projects I worked on throughout my degree.
