@@ -21,12 +21,9 @@ As part of my degree, I was tasked with coming up with a project to work on thro
 
 The engine is designed around being modular making it lightweight and capable. Using Rust's cargo system you can easily important several modules into the core module to create a customizable experience.
 
-<img src="/SamHibb.github.io/images/krust-uml.png" alt="krust uml" width="700" height="400">
+<img src="/SamHibb.github.io/images/krust_uml.png" alt="krust uml" width="700" height="400">
 <br>
-
 An example of one of these components is the timer module.
-
-<br>
 
 #### Krust Timer
 
