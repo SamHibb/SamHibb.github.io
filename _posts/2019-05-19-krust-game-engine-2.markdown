@@ -12,6 +12,8 @@ tags:
 ---
 ## The Renderer (Krust 2/3)
 <br>
+
+
 Building the renderer was the first step in creating the engine. It is a major part of the core systems and is responsible for converting sprites into quads and textures that can be drawn on the user's screen. This is how it works:
 
 ``` rust
