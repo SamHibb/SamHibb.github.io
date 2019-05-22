@@ -12,6 +12,7 @@ tags:
 ---
 ## Thinking Bigger
 <br>
+
 I’ve been working on an off with Kirov trying to balance my course work with working on the engine. This had given me some time to think about what I want to do with Kirov and I’ve decided that I’m going to broaden the horizons and try and make the engine capable of making a variety of games and not just and RTS engine.
 With that out the way let’s look at some of Kirov’s new features:
 
