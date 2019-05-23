@@ -3,7 +3,7 @@ layout: post
 title: Kirov dev diary 1
 date: 2017-10-27T16:30:00.000Z
 description: A follow up to my java game engine
-img: kirov-mapImg.png
+img: kirov-1.png
 published: true
 category: development
 tags:
