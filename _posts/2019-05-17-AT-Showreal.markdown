@@ -3,7 +3,7 @@ layout: post
 title: Advanced Tech showreel
 date: 2019-05-17T15:00:00.000Z
 description: A showreel of my work for the Advanced Technology module in Games Technology degree
-img: at-raytracer.png
+img: previews/at-raytracer.png
 published: true
 category: development
 tags:

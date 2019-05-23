@@ -2,7 +2,7 @@
 layout: post
 title:  "New blog website"
 categories: misc
-img: newblog.png
+img: previews/newblog.png
 categories: two
 ---
 

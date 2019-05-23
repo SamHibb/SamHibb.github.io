@@ -3,7 +3,7 @@ layout: post
 title: The Krust Renderer
 date: 2019-05-22T11:00:00.000Z
 description: The renderer for Krust
-img: krust_texture_coordinates.png
+img: previews/krust-2.png
 published: true
 category: development
 tags:

@@ -3,7 +3,7 @@ layout: post
 title: The Krust game engine
 date: 2019-05-22T10:10:00.000Z
 description: A new game engine
-img: krust-splash.png
+img: previews/krust-1.png
 published: true
 category: development
 tags:
