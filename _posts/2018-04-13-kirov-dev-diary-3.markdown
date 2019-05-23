@@ -3,7 +3,7 @@ layout: post
 title: Kirov dev diary 3
 date: 2018-04-13T16:00:00.000Z
 description: Thinking bigger
-img: kirov-collision1.gif
+img: previews/kirov-3.png
 published: true
 category: development
 tags:

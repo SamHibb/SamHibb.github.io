@@ -3,7 +3,7 @@ layout: post
 title: Kirov dev diary 4
 date: 2018-09-06T16:00:00.000Z
 description: New additions
-img: kirov-ui-1.png
+img: previews/kirov-4.png
 published: true
 category: development
 tags:
