@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Krust's Games
-date: 2019-05-22T10:10:00.000Z
+date: 2019-06-27T14:00:00.000Z
 description: video games!
 img: previews/krust-3.png
 published: true
