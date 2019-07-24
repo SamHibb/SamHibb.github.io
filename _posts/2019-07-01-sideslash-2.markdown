@@ -34,9 +34,3 @@ As before getting these attacks to flow well and feel good along with the moveme
 
 A reworked jump system and a whole bunch of bug fixes. The jumping system was made so much simpler by getting rid of needless variables and switching to rigidbody physics. Next week the plans are to continue tweaking the attack system and to add some targets for the player to attack.
 
-
-
-
-
-#### 
-
