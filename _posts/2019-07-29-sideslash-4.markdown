@@ -1,0 +1,44 @@
+---
+layout: post
+title: Sideslash Dev Diary 4
+date: 2019-07-29T14:00:00.000Z
+description: Going outside
+img: previews/sideslash-4.png
+published: true
+category: development
+tags:
+  - Unity
+  - c#
+  - games
+---
+## Going outside
+
+Introducing the new overworld level.
+
+### Parallax Scrolling
+
+Work on a new level has begun. This level is planned to be the tutorial/overworld level with a little town where the player can rest. It being outside however means it needs a background, which means we need parallaxing.
+
+![Parallax](/assets/img/sideslash-parallax.gif)
+
+*Using various depths of 4 different images to create a moving effect in the background.*
+
+Additionally a moving background system had to be setup. It simply works by using a cloned version of the background and putting that next to it. For example, when the player is moving to the right. When they reach the edge of the first background the duplicate is placed infront to create a seemless loop. Once they reach the end of this duplicate background the original is then placed infront of that.
+
+### UI Mockup
+
+Another feature being worked on is the new UI elements. To help in the creation I created this mockup that should give a good idea of how the UI will look in future.
+
+![UI Mockup](/assets/img/sideslash-ui-mockup.png)
+
+You may also notice the ability cooldowns in the bottom left which is another new addition as of this dev diary.
+
+#### Abilities
+
+Some early systems have been created for abilities and passives to be added to the game. The system has gone through a couple iterations to create a simpler system. Initially there was a distinction between spells (For example: 'Fireball') and buffs (For example: 'On Fire') but I played around with merging the two. Eventually I changed the system to have a new structure.
+
+Every spell is a prefab with a Ability script. The ability script contains the most generic information such as cooldown and how long the ability lasts for. The ability script gathers any other attached spells or buff to the prefab and controls their usage. A prefab can have any number of buffs or spells added to it. For example:
+
+![Abilities](/assets/img/sideslash-abilities.png)
+
+On the left is the rend ability. This ability applies the 'Wound' effect to the enemy next struck by the player's basic attack. On the right is the wound ability. Rend simply applies the enhanced auto attack effect to the player with Wound as it's parameter.  Wound on the other hand has a few different functions. Firstly a armour debuff that weakens the target and secondly a burn that deals a small amount of physical damage to the target (simulating a bleed effect). The infrastructure for these abilities makes it easy to setup new abilities and I'm quite happy with this setup.

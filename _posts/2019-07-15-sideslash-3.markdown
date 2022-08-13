@@ -1,0 +1,55 @@
+---
+layout: post
+title: Sideslash Dev Diary 3
+date: 2019-07-15T13:00:00.000Z
+description: Adding 'Juice'
+img: previews/sideslash-3.png
+published: true
+category: development
+tags:
+  - Unity
+  - c#
+  - games
+---
+## Adding 'Juice'
+
+Juice is a term used in game design to describe the non essential elements around a game that add to the experience. For example, sound effects. When the player attacks their needs to be a good sound effect to go with it to sell the attack. A bigger attack needs a bigger sound.
+
+An example of this in Sideslash is the new critical hit sound which plays a satisfying chime to indicate a critical strike.
+
+### Audio and sound
+
+The new audio manager is in for the player. The system is designed to allow multiple sounds to play at once by using a group of audio sources.
+
+```c#
+private AudioSource findAvailableSource() {...}
+```
+
+When a sound is played the script looks for an available(not in use) source.
+
+```c#
+foreach (AudioSource source in sources){
+ if(source.clip == null)return source;
+}
+```
+
+ If it finds one it uses this source to play the sound. However, if it cannot find an available source it will create a new one to use and store it for later use.
+
+```c#
+AudioSource source = (AudioSource)gameObject.AddComponent(typeof(AudioSource));
+source.outputAudioMixerGroup = mixer;
+sources.Add(source);
+return source;
+```
+
+When the audio is done playing the audio source is freed up and can be used again. This system guarantees that, there will always be an audio source available, the same audio clip can overlap and that there won't be an excess of audio sources without an excess of unique clips.
+
+### Popup text
+
+![Popup Text](/assets/img/sideslash-popup-text.png)
+
+A new popup text system has also been added showing the damage and any status effects applied after any attack. This system is in need of 'jazzing up' as it isn't clear what target is being damaged. On top of that  I would like to add unique colours to every status effect so they're easily identifiable at a glance.
+
+#### Combat and collider tweaks
+
+The combat systems are always undergoing tweaks as development continues. Some notable additions this bi-week are, the setup of stuns and knock-up attacks and the tweaks to collision boxes for both the player and enemies.

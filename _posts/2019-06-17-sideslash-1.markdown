@@ -1,0 +1,77 @@
+---
+layout: post
+title: Sideslash Dev Diary 1
+date: 2019-06-17T14:00:00.000Z
+description: A new portfolio game
+img: previews/sideslash-1.png
+published: true
+category: development
+tags:
+  - Unity
+  - c#
+  - games
+---
+## A new portfolio game
+
+Over the last two weeks I have been working on a new portfolio piece. A game with the working title of Sideslash! The game is designed to be an ARPG side scroller with classic ARPG elements from games like Diablo and side scrolling elements from games like Castlevania and Metroid. The plan is to create bi-weekly dev diary updates detailing the game's development. So without further adieu...
+
+### Movement and Collision
+
+I reclaimed a lot of assets and code from my Krust_Tower project to use is this game including a reworked movement system. In order to move the player can use directional buttons or an analogue stick. The inputs are then used to determine the acceleration which is then used to determine the velocity. In order to move the player the horizontal velocity is added to the player's current position. Using Unity's inbuilt collision system has worked well so far with this system.
+
+```c#
+float h_axis = Input.GetAxis("Horizontal");
+        
+if(h_axis != 0){
+    moving = true;
+    h_acceleration = h_axis * player_constants.ACCELERATION_LIMIT;
+} else {
+    moving = false;
+}
+
+if(Input.GetButton("Jump") && !jumping && !falling){
+    jumping = true;
+}
+
+if(jumping && !inAir){
+    jump();
+}
+
+if(moving){
+    move();
+}else {
+    idle();
+}
+
+if(h_acceleration < 0.0){
+    spriteRenderer.flipX = true;
+}else if(h_acceleration > 0.0){
+    spriteRenderer.flipX = false;
+}
+
+
+transform.position = 
+    transform.position + new Vector3(h_velocity * Time.deltaTime, 0.0f, 0.0f);
+```
+
+*Firstly the h_axis variable is taken from input and used to determine acceleration, next that acceleration is used in the 'move()' method to determine the h_velocity used to move the player.*
+
+#### Animation
+
+Currently a system of booleans is used to control the animation state of the player.
+
+![Animator](/assets/img/sideslash-animator-1.png)
+
+This works for the current system but when adding more complexity to the move system things can become more convoluted. In future I plan to upgrade this system to use triggers and sub-states but for now the system will do while movement is being developed.
+
+#### Ground Collision
+
+After a whole bunch of research and testing I found that the best way to handle the player's ground collision was to use ray tracing. The player fires a ray down from the bottom of it's collider until it hits something which determines whether or not it has hit ground. This can have some issues when colliding with walls however leaving to these kinds of floating effects:
+
+![Player Stuck](/assets/img/sideslash-player-stuck.png)
+
+A potential solution to this is to setup a capsule collision instead to widen the ray collider. Something to consider for the next two weeks
+
+#### Closing Thoughts
+
+Something I've been focusing on this week and will continue to focus on it's prioritising the look and feel of the core mechanics. Before working on fixing the minor collision bugs or adding the UI and such features I believe that it is incredibly important to get the core gameplay mechanics feeling right. In this case the movement. If it doesn't feel good to move around the game won't be fun to play. This is why I put so much emphasis on the development of movement systems over fixing some of the collision issues.

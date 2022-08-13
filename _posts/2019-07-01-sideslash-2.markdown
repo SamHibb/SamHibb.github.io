@@ -1,0 +1,28 @@
+---
+layout: post
+title: Sideslash Dev Diary 2
+date: 2019-07-01T16:00:00.000Z
+description: Combat
+img: previews/sideslash-2.png
+published: true
+category: development
+tags:
+  - Unity
+  - c#
+  - games
+---
+## Combat
+
+This week was mainly focused on adding animations for both jumping/movement and the new combat system.
+
+### Attacks
+
+![Combat](/assets/img/sideslash-combat.png)
+
+In the long term there are plans for additional characters but for the first character he is setup to have a directional based attack system. Up attacks that knock-up enemies, down attacks that stun enemies and side or neutral attacks that serve as quick means of damage dealing. There are also aerial variants of these abilities.
+
+As before getting these attacks to flow well and feel good along with the movement system is essential to having an engaging core gameplay loop which is why most of the week was spent focused on this combat system. I predict that the combat system will need even further tweaking and development in the coming weeks.
+
+#### What else
+
+A reworked jump system and a whole bunch of bug fixes. The jumping system was made so much simpler by getting rid of needless variables and switching to rigidbody physics. Next week the plans are to continue tweaking the attack system and to add some targets for the player to attack.
