@@ -14,12 +14,7 @@ tags:
   - AI
 ---
 ## AT Showreel
-<br>
 
 This video is a showreel demonstrating the various projects I worked on throughout my degree.
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/XtBo6ozG9Lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-

@@ -11,8 +11,6 @@ tags:
   - game engine
 ---
 ## The Renderer (Krust 2/3)
-<br>
-
 
 Building the renderer was the first step in creating the engine. It is a major part of the core systems and is responsible for converting sprites into quads and textures that can be drawn on the user's screen. This is how it works:
 
@@ -92,8 +90,6 @@ for sprite in self.sprite_list.iter() {
 }
 ```
 
-
-
 If it finds a match, it will add it to that sprite\_sheet listing. If not, it will create a new list and continue the process until all the sprites are categorised. Once categorised, it moves on to the final step.
 
 ``` rust
@@ -117,8 +113,6 @@ If it finds a match, it will add it to that sprite\_sheet listing. If not, it wi
     }
 }
 ```
-
-
 
 In order to render out the sprites efficiently, they are categorised by sheet. Now the algorithm iterates through the listings of sprite\_sheets and bind the texture once for each. In the above code the sheet is chosen and the first sprite is used to bind the texture into memory. Then, it iterates through the sprites in the vector of the sprite\_sheet to get their model and colour data. The colour data is passed to the shader shown in Snippet 1 below.
 
@@ -162,8 +156,7 @@ self.bind_buffer(&self.gl, 0);
 
 The texture buffer is bound and the data is set. The target is a gl::ARRAY\_BUFFER, the size of the data in bytes can be worked out as the number of values (texture coordinates) in the vector of texture coordinates multiplied by the size of a GlFloat. The actual data is passed as a raw const pointer. This buffer handles where to offset the texture to correctly render the sprite's image. It works by calculating the number of pixels along and down a texture for each vertex position called a texture coordinate.
 
-<img src="/SamHibb.github.io/images/krust_texture_coordinates.png" alt="Texture Coordinates" width="700" height="400">
-<br>
+![Texture Coordinates](/assets/img/krust_texture_coordinates.png)
 
 The next buffer handles loading the model (position, rotation and scale). As before, the model buffer is bound and the target is set. For the size of the data we can just use 1 glm::Mat4 (a 4 x 4 matrix). Then, the raw pointer to the matrix is set and the usage is set to again gl::STATIC\_DRAW.
 
@@ -177,19 +170,17 @@ In the sprite renderer we call the final command:
 
 ``` rust
 unsafe{
-    self.gl.DrawArrays(gl::TRIANGLE_STRIP, 0, 4);
+  self.gl.DrawArrays(gl::TRIANGLE_STRIP, 0, 4);
 }
 ```
 
 This draws our vertices and these vertices have the desired position, rotation and scale in the world with the correct texture applied to them.
 
-<img src="/SamHibb.github.io/images/krust_sprite_render.png" alt="Sprite Render" width="700" height="400">
-<br>
+![Sprite Render](/assets/img/krust_sprite_render.png)
 
 For rendering text, the system works very much the same as with sprites. Text is added to the text\_list and drawn at the end of the loop. Text can be altered by giving it a position, scale and colour. One of the major limitations of the current system is the font loading system. The engine can only currently use one font which is going to fixed in future. In order to load in fonts the engine uses a library called [freetype](https://www.freetype.org/freetype2/docs/index.html).
 
-<img src="/SamHibb.github.io/images/krust_glyph.png" alt="Glyph" width="700" height="400">
-<br>
+![Sprite Render](/assets/img/krust_glyph.png)
 
 ``` rust
 for c in 0..128 {
@@ -220,7 +211,6 @@ for c in 0..128 {
 ```
 
 In the above code is a 'for loop' that uses FreeType to load in the texture for the provided font and character. The texture is then assigned to the specific character along with with the size, bearing and advance as seen in the glyph.
-
 
 Next, for each of the characters the vertex data needs to be bound. This process is done when rendering by:
 
@@ -261,14 +251,12 @@ A string is converted into a character and this character is used to lookup the 
 
 Scaling the text can present a problem due to the text's fixed size. If the text is stretched across the entire screen you can start to notice blurriness or low-quality textures for the characters depending if anti-aliasing is being used. This is where signed distance fields can be used to create clear text at most  resolutions. In the paper by [Chris Green](####References) he details the process of using signed text fields to improve text quality.
 
-<img src="/SamHibb.github.io/images/krust_signedtext.png" alt="Signed Text" width="700" height="400">
+![Signed Text](/assets/img/krust_signedtext.png)
 
 Instead of storing the fonts as a bitmap texture it functions by storing the distance from each texture pixel to the edge of the character and uses a shader to compute the hard edges. This allows the engine to render text at any resolution while only needing to use a small texture for the font saving on GPU memory. 
 
 This [video](https://www.youtube.com/watch?v=CGZRHJvJYIg]) demonstrates this effect in action. The engine does not currently enable this functionality. Instead, other systems were prioritized but, this is a definite planned feature which has had research put into it.
 
-
-
-#### References
+### References
 
 Green, C. (2007). Improved alpha-tested magnification for vector textures and special effects. *ACM SIGGRAPH 2007 Courses on - SIGGRAPH 07*. doi:10.1145/1281500.1281665

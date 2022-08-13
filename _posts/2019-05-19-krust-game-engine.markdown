@@ -11,18 +11,15 @@ tags:
   - game engine
 ---
 ## A new game engine (Krust 1/3)
-<br>
-
-
 
 As part of my degree, I was tasked with coming up with a project to work on throughout my final year. Based on my previous experience with the Kirov engine and after discussion with lecturers I decided to create a new game engine in the Rust programming language. This post details the engine and gives a brief overview of it's current features and functions.
 
-#### UML and Engine Structure
+### UML and Engine Structure
 
 The engine is designed around being modular making it lightweight and capable. Using Rust's cargo system you can easily important several modules into the core module to create a customizable experience.
 
-<img src="/SamHibb.github.io/images/krust_uml.png" alt="krust uml" width="700" height="400">
-<br>
+![UML](/assets/img/krust_uml.png)
+
 An example of one of these components is the timer module.
 
 #### Krust Timer
@@ -77,8 +74,6 @@ if self.timer.after_x_ms("GROUND_UP_ATTACK", 400) {
 
 The condition is inside of an update loop that is called consistently by the engine allowing it to remain synchronized and track the passage of time.
 
-
-
-#### Modular Design
+### Modular Design
 
 The goal for the engine's design was to create a variety of components with most being designed around certain types of games. For example, having preset camera systems designed for isometric games, side facing games and top down games. Instead of having all of these available in the core system they can be imported as needed. This creates a much more lightweight experience as there are no unused components in the engine.
